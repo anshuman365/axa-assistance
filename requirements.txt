@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+openai
+google-auth
+google-auth-oauthlib
+google-api-python-client
+apscheduler
+python-dotenv
+sentence-transformers
+chromadb

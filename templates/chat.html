@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Axa — Your Personal AI</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+  body { background: #0d0d12; color: #e8e8e8; height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 16px 24px; border-bottom: 1px solid #2a2a35; font-size: 20px; font-weight: 600; color: #c9a76a; }
+  #chat-window { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+  .msg { max-width: 70%; padding: 12px 16px; border-radius: 12px; line-height: 1.4; }
+  .user-msg { align-self: flex-end; background: #c9a76a; color: #1a1a1a; }
+  .axa-msg { align-self: flex-start; background: #1c1c26; border: 1px solid #2a2a35; }
+  #input-bar { display: flex; padding: 16px; border-top: 1px solid #2a2a35; gap: 10px; }
+  #msg-input { flex: 1; padding: 12px 16px; border-radius: 8px; border: 1px solid #2a2a35; background: #15151c; color: #fff; }
+  #send-btn { padding: 12px 24px; background: #c9a76a; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+  #notif-bar { padding: 8px 24px; background: #2a2a35; font-size: 13px; color: #c9a76a; display: none; }
+</style>
+</head>
+<body>
+  <header>🟡 Axa — Personal AI OS</header>
+  <div id="notif-bar"></div>
+  <div id="chat-window"></div>
+  <div id="input-bar">
+    <input type="text" id="msg-input" placeholder="Axa se kuch bolo...">
+    <button id="send-btn">Send</button>
+  </div>
+
+<script src="/static/chat.js"></script>
+</body>
+</html>
